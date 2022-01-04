@@ -1,6 +1,13 @@
 .intro__titre {
     background-color: var(--fond--blanc);
+    width: max-content;
     position: relative;
     z-index: 1;
     bottom: 90px;
 }
+
+.intro__prest {
+    font-style: italic;
+    margin-top: -60px;
+}
+

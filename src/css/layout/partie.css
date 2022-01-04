@@ -1,0 +1,38 @@
+.part__title {
+    background-color: var(--fond--rouge);
+    width: max-content;
+
+}
+
+.part__img_DG {
+    display: flex; 
+    flex-flow: row nowrap; 
+    align-items: flex-start;
+}
+
+.part__exp_img {
+    font-size: var(--exp--img);
+    text-align: center;
+}
+
+.part__miniTitle {
+    border-top: solid 1px var(--fond--rouge);
+    padding-top: 20px;
+}
+
+.fin__partie {
+    text-align: center;
+}
+
+.part__link {
+    display: block;
+    background-color: var(--fond--gris-fonce);
+    width: max-content;
+    color: var(--fond--blanc);
+    text-decoration: none;
+}
+
+.lp1 {
+    margin-left: auto;
+}
+
