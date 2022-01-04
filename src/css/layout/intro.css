@@ -1,0 +1,6 @@
+.intro__titre {
+    background-color: var(--fond--blanc);
+    position: relative;
+    z-index: 1;
+    bottom: 90px;
+}

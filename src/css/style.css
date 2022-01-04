@@ -13,6 +13,7 @@
 /*layout*/
 @import url("/src/css/layout/header.css");
 @import url("/src/css/layout/footer.css");
+@import url("/src/css/layout/intro.css");
 
 /*components*/
 @import url("/src/css/components/menu.css");
