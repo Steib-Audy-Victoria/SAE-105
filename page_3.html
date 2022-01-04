@@ -65,12 +65,12 @@
     </header>
 
     <main>
-        <section>
+        <section class="intro">
             <!--Intro de la page-->
-            <img src="/public/img/Representation_justice_Balance.webp"
+            <img class="intro__img imgGT" src="/public/img/Representation_justice_Balance.webp"
                 alt="Image d'une balance pour représenter la justice">
-            <h2>La justice</h2>
-            <p>
+            <h2 class="intro__titre">La justice</h2>
+            <p class="intro__prest">
                 Dans les précédents articles j’ai parlé du manga Death Note et de son adaptation en film par Netflix.
                 Maintenant, je vais faire un zoom sur la justice. Car si tuer des criminels est considéré comme un
                 crime, L utilise des meurtriers (certains vont mourir) pour capturer Kira.
@@ -79,9 +79,9 @@
             </p>
         </section>
 
-        <section>
+        <section class="partie">
             <!--Partie 1-->
-            <h3>Que dit la loi française ?</h3>
+            <h3 class="part__title">Que dit la loi française ?</h3>
             <p>
                 Le meurtre est le « fait de donner volontairement la mort à autrui » (article 221-1 du code pénal) et
                 peut être puni de trente ans de réclusion criminelle.
@@ -106,18 +106,20 @@
             <p>(article 122-5 du code pénal)</p>
         </section>
 
-        <section>
+        <section class="partie">
             <!--Partie 2-->
-            <h3>Comment mène-t-on une enquête pour meurtre ?</h3>
+            <h3 class="part__title">Comment mène-t-on une enquête pour meurtre ?</h3>
 
             <img src="/public/img/Meurtre.webp" alt="Image d'une scène de crime">
-            <p>Une scène de crime. On y voit la position de la victime quand elle a été retrouvée et les différentes
+            <p class="part__exp_img">Une scène de crime. On y voit la position de la victime quand elle a été retrouvée
+                et les différentes
                 preuves autour.</p>
 
-            <p>Il y a plusieurs étapes dans une enquête. Tout d’abord, des recherches sont menées sur place. Il faut :
+            <p>Il y a plusieurs étapes dans une enquête. Tout d’abord, <b>recherches sont menées sur place</b>. Il faut
+                :
             </p>
 
-            <h5>1. Trouver un corps</h5>
+            <h5 class="part__petitTitle">1. Trouver un corps</h5>
             <p>
                 Sans corps, il est difficile de commencer une enquête, sauf dans des cas particuliers.
                 Cela peut-être la disparition d’une personne ou l’on est certain qu’elle est morte.
@@ -125,7 +127,7 @@
                 brigade, médecin légiste ...).
             </p>
 
-            <h5>2. Sécuriser la zone autour du corps</h5>
+            <h5 class="part__petitTitle">2. Sécuriser la zone autour du corps</h5>
             <p>
                 A l’arrivée de la police, ceux-ci sécurisent la scène de crime, en utilisant des rubalises (les rubans
                 jaunes qu’on voit dans les séries).
@@ -134,15 +136,15 @@
                 Cependant, cela n’arrange pas le travail des policiers.
             </p>
             <img src="/public/img/Meurtre_scene.webp" alt="Image d'une scène de crime avec banderolle">
-            <p>Déroulement d'une rubalise pour sécuriser la zone.</p>
+            <p class="part__exp_img">Déroulement d'une rubalise pour sécuriser la zone.</p>
 
-            <h5>3. Arrivée de la police scientifique</h5>
+            <h5 class="part__petitTitle">3. Arrivée de la police scientifique</h5>
             <p>
                 Très rapidement, la police scientifique arrive.
                 Les policiers enfilent blouse, chaussures, gants et masque pour ne pas salir les lieux.
             </p>
 
-            <h5>4. Prendre des photos pour "geler" la scène</h5>
+            <h5 class="part__petitTitle">4. Prendre des photos pour "geler" la scène</h5>
             <p>
                 Pour ne pas rater le moindre détail, absolument tout est pris en photo.
                 Les traces de sang, de chaussure, jusqu’au plaies de la victime.
@@ -150,28 +152,35 @@
                 les faits.
             </p>
 
-            <h5>5. Identifier le cadavre si possible</h5>
+            <h5 class="part__petitTitle">5. Identifier le cadavre si possible</h5>
             <p>Après avoir pris des photos, la police essaye d’identifier le cadavre.
                 Il a peut-être ses papiers sur lui (carte d’identité, passeport, permis ...).
                 Si rien n’est trouvé, son ADN permettra peut-être de connaître son nom.</p>
 
-            <h5>6. Le médecin légiste</h5>
+            <h5 class="part__petitTitle">6. Le médecin légiste</h5>
             <p>C’est le seul qui peut toucher le corps. C’est aussi lui qui doit déterminer l’heure de la mort.</p>
 
-            <h5>7. Recherche des témoins</h5>
+            <h5 class="part__petitTitle">7. Recherche des témoins</h5>
             <p>
                 La police va ensuite interroger les personnes présentes au moment des faits.
                 Ceux-ci peuvent apporter une grande aide pour avoir une piste par où commencer.
                 Les auditions commencent immédiatement pour éviter qu’ils oublient des détails.
             </p>
 
-            <h5>8. Essayer de comprendre les circonstances de la mort (suicide, accident, meurtre ?)</h5>
-            <img src="/public/img/empreinte.webp" alt="Image d'une empreinte de doigt">
-            <p>Empreinte relevée sur une scène de crime</p>
-            <p>Tous les potentiels indices trouvés dans la zone seront relevés (traces de sang, de semelle, empreintes,
-                mégots, ...).</p>
+            <h5 class="part__petitTitle">8. Essayer de comprendre les circonstances de la mort (suicide, accident,
+                meurtre ?)</h5>
+            <div class="part__DGp3">
+                <div class="gauche">
+                    <img src="/public/img/empreinte.png" alt="Image d'une empreinte de doigt">
+                    <p class="part__exp_img Gp">Empreinte relevée sur une scène de crime</p>
+                </div>
+                <div class="droite">
+                    <p>Tous les potentiels indices trouvés dans la zone seront relevés (traces de sang, de semelle,
+                        empreintes, mégots, ...).</p>
+                </div>
+            </div>
 
-            <h5>9. Faire des tests pour avoir de vraies preuves</h5>
+            <h5 class="part__petitTitle">9. Faire des tests pour avoir de vraies preuves</h5>
             <p>
                 Le sang retrouvé un petit peu plus loin du cadavre est-il d’origine humaine ?
                 De tels doutes peuvent et doivent être immédiatement éliminés.
@@ -179,20 +188,21 @@
 
             <p><b>Puis, l'enquête continue dans des laboratoires ou dans des salles</b></p>
 
-            <h5>10. Une fois toute la zone passée au crible, le corps est emmené dans un institut médico-légal.</h5>
+            <h5 class="part__petitTitle">10. Une fois toute la zone passée au crible, le corps est emmené dans un
+                institut médico-légal.</h5>
             <p>
                 Le corps arrivé dans un institut médico-légal, le rôle du médecin légiste continue.
                 Il doit comprendre exactement les circonstances de la mort. Toutes les étapes sont photographiées.
                 Chaque élément est mis sous scellé (montre, vêtement, peau, ...).
             </p>
 
-            <h5>11. Poursuite des auditions</h5>
+            <h5 class="part__petitTitle">11. Poursuite des auditions</h5>
             <p>
                 Les auditions se poursuivent. Les témoins peuvent se souvenir de quelque chose.
                 Les proches de la victime peuvent permettre de repérer un changement dans ses habitudes.
             </p>
 
-            <h5>12. Représentation de la scène de crime avec des technologies ultra avancé
+            <h5 class="part__petitTitle">12. Représentation de la scène de crime avec des technologies ultra avancé
                 (modélisation 3D de la scène avec le laser/scanner).</h5>
             <p>
                 Aujourd’hui, des technologies ultra avancées peuvent permettre de résoudre des affaires compliquées.
@@ -202,7 +212,7 @@
                 auraient oublié par exemple.
             </p>
 
-            <h5>13. Faire des tests</h5>
+            <h5 class="part__petitTitle">13. Faire des tests</h5>
             <p>
                 Pour ne laisser place à aucun doute, des tests sont effectués.
                 Par exemple, si la victime a été tuée par balle, on va tirer sur des cibles, avec la même arme que celle
@@ -214,8 +224,8 @@
             </p>
         </section>
 
-        <a href="page_3.html">
-            <img src="/public/img/icone_page_suivante.webp" alt="Icone d'une flèche pour indiquer une page suivante">
+        <a class="part__link lp3" href="page_3.html">
+            <img src="/public/img/icone_page_suivante.png" alt="Icone d'une flèche pour indiquer une page suivante">
             Article du film Netflix
         </a>
     </main>

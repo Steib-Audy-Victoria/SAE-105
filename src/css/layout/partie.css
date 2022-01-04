@@ -36,3 +36,21 @@
     margin-left: auto;
 }
 
+.part__petitTitle {
+    border-bottom: solid 2px var(--fond--rouge);
+    width: max-content;
+}
+
+.part__DGp3 {
+    display: flex; 
+    flex-flow: row nowrap; 
+    align-items: flex-start;
+}
+
+.part__DGp3>.gauche {
+    flex: none;
+}
+
+.Gp {
+    width: 117px;
+}
