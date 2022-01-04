@@ -1,0 +1,17 @@
+.card {
+    display: flex; 
+    flex-flow: row nowrap; 
+    align-items: flex-start;
+}
+
+.card>.gauche {
+    width: 25vw;
+    flex: none;
+}
+
+.card__link {
+    display: block;
+    background-color: var(--fond--gris-fonce);
+    width: max-content;
+    margin-left: auto;
+}

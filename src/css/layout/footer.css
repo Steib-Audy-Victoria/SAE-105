@@ -1,4 +1,5 @@
 .footer {
+    position: absolute;
     background-color: var(--fond--gris-fonce);
     color: var(--fond--blanc);
     margin-bottom: var(--space1x);
