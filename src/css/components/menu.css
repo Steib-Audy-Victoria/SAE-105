@@ -55,7 +55,7 @@
 /*Mise en forme du menu hamburger*/
 .menu-btn {
     position: relative;
-    z-index: 3;
+    z-index: 5;
     width: 30px; 
     background-color: var(----fond--gris-fonce);
     color: var(--texte--noir);
@@ -72,7 +72,7 @@
     width: 100%;
     position: absolute;
     left: 0;
-    z-index: 8;
+    z-index: 10;
     transition: all .8s ease;
     
 }
