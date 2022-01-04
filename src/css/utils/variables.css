@@ -1,7 +1,7 @@
 :root {
     /* Color styles */
 --fond--gris-clair: rgba(232, 232, 232, 1);
---fond--gris-foncé: rgba(42, 41, 41, 1);
+--fond--gris-fonce: rgba(42, 41, 41, 1);
 --fond--blanc: rgba(255, 255, 255, 1);
 --texte--noir: rgba(0, 0, 0, 1);
 --fond--rouge: rgba(167, 7, 9, 1);

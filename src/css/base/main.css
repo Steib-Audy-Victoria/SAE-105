@@ -41,6 +41,16 @@ h5 {
     font-style: italic;
 }
 
+/* Annuler la mise en forme des bouton qu'applique le navigateur. */
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 /* Pour enlever l'apparence par défaut des listes */
 .list-unstyled {
     list-style: none;

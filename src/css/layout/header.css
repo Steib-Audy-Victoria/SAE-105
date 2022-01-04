@@ -1,0 +1,23 @@
+.header {
+    background-color: var(--fond--gris-fonce);
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__end {
+    display: flex;
+    gap: var(--space2x);
+}
+
+.header__start {
+    display: flex;
+}
+
+.header--atTop {
+    background-color: var(--fond--gris-fonce);
+}
+  
+.header--atTop {
+    filter: none;
+}
