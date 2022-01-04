@@ -19,22 +19,37 @@
     visibility: visible;
     background-color: var(--fond--gris-clair);
     background-image: url("/public/img/pomme_noire.png");
+    background-repeat: no-repeat;
+    background-position: bottom right 50px;
     opacity: 1;
     transform: translateX(0);
 }
 
 .menu__list {
-    margin-top: 10%;
+    margin-top: 30%;
     margin-left: 15px;
 }
 
 .menu__link {
     color: var(--texte--noir);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__bar {
+    border-bottom: solid ;
+    border-color: var(--fond--gris-fonce);
+    border-width: 2px;
 }
 
 .menu__item {
     margin-top: 37px;
+}
+
+.text__blanc{
+    color: var(--fond--blanc);
 }
 
 /*Mise en forme du menu hamburger*/

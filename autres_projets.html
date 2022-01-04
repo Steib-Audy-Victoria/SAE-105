@@ -1,37 +1,60 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madness of Manga - Autres Projets</title>
+    <title>Madness of Manga - Page d'accueil</title>
 
-            <!-- Déclaration de la feuille de style -->
-            <link rel="stylesheet" href="/src/css/style.css">
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
 </head>
-<body>
-   
-    <header>
-        <a href="/">
-            <img src="/public/img/pomme_blanche.webp" alt="Logo du site, une pomme blanche">
-            <h1>Madness of Manga</h1>
-        </a>
+<body x-data="{ atTop : false }">
 
-        <!--Menu Hamburger-->
+    <header class="header"
+            :class="atTop && 'header--atTop'"
+            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+        <div class="header__caption">
+            <div class="header__start">
+                <a class="header__link" href="/">
+                    <img class="header__logo" src="/public/img/pomme_blanche.png" alt="Logo du site, une pomme blanche">
+                    <h1 class="header__title">Madness of Manga</h1>
+                </a>
+            </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="page_1.html">Death Note, un chef d'oeuvre</a></li>
-                <li><a href="page_2.html">Death Note, le film Netflix</a></li>
-                <li><a href="page_3.html">La justice française</a></li>
-                <li><a href="autres_projets.html">Autres projets</a></li>
-                <li><a href="a_propos.html">A propos </a></li>
-                <li><a href="formulaire.html">Contact</a></li>
+            <div class="header__end">
+                <!--Menu Hamburger-->
+                <button class="header__menu-btn menu-btn"
+                @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link menu__bar" href="index.html">Accueil</a></li>
+                <li class="menu__item">
+                    <a class="menu__link menu__bar" href="page_1.html">Death Note, un chef d'oeuvre</a></li>
+                <li class="menu__item">
+                    <a class="menu__link menu__bar" href="page_2.html">Death Note, le film Netflix</a></li>
+                <li class="menu__item">
+                    <a class="menu__link menu__bar" href="page_3.html">La justice française</a></li>
+                <li class="menu__item">
+                    <a class="menu__link menu__bar" href="autres_projets.html">Autres projets</a></li>
+                <li class="menu__item">
+                    <a class="menu__link menu__nonbar" href="a_propos.html">A propos </a></li>
+                <li class="menu__item">
+                    <a class="menu__link menu__nonbar text__blanc" href="formulaire.html">Contact</a></li>
             </ul>
         </nav>
-        <img src="/public/img/pomme_noire.webp" alt="Pomme noir de fond">
-
+        
     </header>
 
     <main>

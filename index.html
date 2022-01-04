@@ -18,42 +18,43 @@
     <header class="header"
             :class="atTop && 'header--atTop'"
             @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+        <div class="header__caption">
+            <div class="header__start">
+                <a class="header__link" href="/">
+                    <img class="header__logo" src="/public/img/pomme_blanche.png" alt="Logo du site, une pomme blanche">
+                    <h1 class="header__title">Madness of Manga</h1>
+                </a>
+            </div>
 
-        <div class="header__start">
-            <a class="header__link" href="/">
-                <img class="header__logo" src="/public/img/pomme_blanche.png" alt="Logo du site, une pomme blanche">
-                <h1 class="header__title">Madness of Manga</h1>
-            </a>
+            <div class="header__end">
+                <!--Menu Hamburger-->
+                <button class="header__menu-btn menu-btn"
+                @click="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+                </button>
+            </div>
         </div>
 
-        <div class="header__end">
-            <!--Menu Hamburger-->
-            <button class="header__menu-btn menu-btn"
-            @click="menuIsOpen = !menuIsOpen"
-            :class="menuIsOpen && 'menu-btn--open'">
-            <span class="menu-btn__bar"></span>
-            </button>
-
-
-            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
-                <ul class="menu__list list-unstyled">
-                    <li class="menu__item">
-                        <a class="menu__link" href="index.html">Accueil</a></li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="page_1.html">Death Note, un chef d'oeuvre</a></li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="page_2.html">Death Note, le film Netflix</a></li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="page_3.html">La justice française</a></li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="autres_projets.html">Autres projets</a></li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="a_propos.html">A propos </a></li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="formulaire.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item">
+                    <a class="menu__link menu__bar" href="index.html">Accueil</a></li>
+                <li class="menu__item">
+                    <a class="menu__link menu__bar" href="page_1.html">Death Note, un chef d'oeuvre</a></li>
+                <li class="menu__item">
+                    <a class="menu__link menu__bar" href="page_2.html">Death Note, le film Netflix</a></li>
+                <li class="menu__item">
+                    <a class="menu__link menu__bar" href="page_3.html">La justice française</a></li>
+                <li class="menu__item">
+                    <a class="menu__link menu__bar" href="autres_projets.html">Autres projets</a></li>
+                <li class="menu__item">
+                    <a class="menu__link menu__nonbar" href="a_propos.html">A propos </a></li>
+                <li class="menu__item">
+                    <a class="menu__link menu__nonbar text__blanc" href="formulaire.html">Contact</a></li>
+            </ul>
+        </nav>
+        
     </header>
 
     <main>
@@ -62,30 +63,30 @@
             Plongeons nous dans cet univers à la fois sombre et intrigant.</p>
 
         <article>
-            <img src="/public/img/visuel_livre.webp" alt="Visuel pour l'article sur le livre Death Note">
-            <h2>Death Note, un chef d'œuvre</h2>
+            <div class="gauche"><img src="/public/img/visuel_livre.webp" alt="Visuel pour l'article sur le livre Death Note"></div>
+            <div class="droite"><h2>Death Note, un chef d'œuvre</h2>
             <p>Dans un 1er article, je vous présenterais un classique dans le monde des mangas : Death Note</p>
             <a href="page_1.html"> Lire l'article
                 <img src="/public/img/icone_page_suivante.png" alt="Icone d'une flèche">
-            </a>
+            </a></div> 
         </article>
 
         <article>
-            <img src="/public/img/Film_Death_Note_Netflix.webp" alt="Visuel pour l'article sur le Film Death Note">
-            <h2>Death Note, le film Netflix</h2>
+            <div class="gauche"><img src="/public/img/Film_Death_Note_Netflix.webp" alt="Visuel pour l'article sur le Film Death Note"></div>
+            <div class="droite"><h2>Death Note, le film Netflix</h2>
             <p>Suite au succès du manga, Netflix en a fait un film. Je présenterais cette adaptation qui a des critiques très divisées.</p>
             <a href="page_2.html"> Lire l'article
                 <img src="/public/img/icone_page_suivante.png" alt="Icone d'une flèche">
-            </a>        
+            </a></div>        
         </article>
 
         <article>
-            <img src="/public/img/Representation_justice.webp" alt="Visuel pour l'article sur le justice">
-            <h2>La justice française</h2>
+            <div class="gauche"><img src="/public/img/Representation_justice.webp" alt="Visuel pour l'article sur le justice"></div>
+            <div class="droite"><h2>La justice française</h2>
             <p>L et Light pensent faire la justice. Mais dans la vraie vie, comment les enquêtes sont-elles réalisées ?</p>
             <a href="page_3.html"> Lire l'article
                 <img src="/public/img/icone_page_suivante.png" alt="Icone d'une flèche">
-            </a>        
+            </a></div>        
         </article>
     
     </main> 
