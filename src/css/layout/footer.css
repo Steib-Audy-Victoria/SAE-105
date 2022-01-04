@@ -1,7 +1,9 @@
 .footer {
     background-color: var(--fond--gris-fonce);
     color: var(--fond--blanc);
-    overflow: hidden;
+    margin-bottom: var(--space1x);
+    
+
 }
 
 .footer__link {

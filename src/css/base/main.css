@@ -12,6 +12,10 @@ body {
     line-height: 1.6;
     background-color: var(--fond--gris-clair);
     color: var(--texte--noir);
+    margin-top: 50px;
+}
+
+main {
     padding: var(--space1x);
 }
 
