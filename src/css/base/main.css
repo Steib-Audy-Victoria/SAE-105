@@ -12,6 +12,7 @@ body {
     line-height: 1.6;
     background-color: var(--fond--gris-clair);
     color: var(--texte--noir);
+    padding: var(--space1x);
 }
 
 /* Les règles typographiques générales des titres */
