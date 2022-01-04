@@ -15,6 +15,7 @@
 @import url("/src/css/layout/footer.css");
 @import url("/src/css/layout/intro.css");
 @import url("/src/css/layout/partie.css");
+@import url("/src/css/layout/autres_pages.css");
 
 /*components*/
 @import url("/src/css/components/menu.css");
