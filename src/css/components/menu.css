@@ -28,6 +28,11 @@
     margin-left: 15px;
 }
 
+.menu__link {
+    color: var(--texte--noir);
+    text-decoration: none;
+}
+
 .menu__item {
     margin-top: 37px;
 }
@@ -54,6 +59,7 @@
     left: 0;
     z-index: 8;
     transition: all .8s ease;
+    
 }
 
 .menu-btn__bar::before {

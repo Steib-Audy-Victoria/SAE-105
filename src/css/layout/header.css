@@ -3,6 +3,12 @@
     top: 0;
     left: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0 var(--space3x);
+    z-index: 10;
+    line-height: 36px;
 }
 
 .header__end {
@@ -20,4 +26,18 @@
   
 .header--atTop {
     filter: none;
+}
+
+.header__logo {
+    position: absolute;
+    left: 0%;
+    right: 80.62%;
+    top: 0%;
+    bottom: 8.08%;
+}
+
+.header__title {
+    position: relative;
+    top: 5%;
+    left: 22%;
 }
