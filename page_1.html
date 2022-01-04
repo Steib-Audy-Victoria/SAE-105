@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,16 @@
 
     <!-- Déclaration de la feuille de style -->
     <link rel="stylesheet" href="/src/css/style.css">
-    
+
     <!-- Chargement de la librairie Alpine JS -->
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 
 </head>
+
 <body x-data="{ atTop : false }">
 
-    <header class="header"
-            :class="atTop && 'header--atTop'"
-            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+    <header class="header" :class="atTop && 'header--atTop'"
+        @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
         <div class="header__caption">
             <div class="header__start">
                 <a class="header__link" href="/">
@@ -28,10 +29,9 @@
 
             <div class="header__end">
                 <!--Menu Hamburger-->
-                <button class="header__menu-btn menu-btn"
-                @click="menuIsOpen = !menuIsOpen"
-                :class="menuIsOpen && 'menu-btn--open'">
-                <span class="menu-btn__bar"></span>
+                <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen"
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
                 </button>
             </div>
         </div>
@@ -39,22 +39,29 @@
         <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
             <ul class="menu__list list-unstyled">
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="index.html">Accueil</a></li>
+                    <a class="menu__link menu__bar" href="index.html">Accueil</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_1.html">Death Note, un chef d'oeuvre</a></li>
+                    <a class="menu__link menu__bar" href="page_1.html">Death Note, un chef d'oeuvre</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_2.html">Death Note, le film Netflix</a></li>
+                    <a class="menu__link menu__bar" href="page_2.html">Death Note, le film Netflix</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_3.html">La justice française</a></li>
+                    <a class="menu__link menu__bar" href="page_3.html">La justice française</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="autres_projets.html">Autres projets</a></li>
+                    <a class="menu__link menu__bar" href="autres_projets.html">Autres projets</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__nonbar" href="a_propos.html">A propos </a></li>
+                    <a class="menu__link menu__nonbar" href="a_propos.html">A propos </a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__nonbar text__blanc" href="formulaire.html">Contact</a></li>
+                    <a class="menu__link menu__nonbar text__blanc" href="formulaire.html">Contact</a>
+                </li>
             </ul>
         </nav>
-        
+
     </header>
 
     <main>
@@ -63,54 +70,62 @@
             <img src="/public/img/Death_Note_livre.webp" alt="Image du livre Death Note">
             <h2>Death Note, un chef </h2>
             <p>Death Note est un manga écrit par Tsugumi Oba et
-                dessiné par Takeshi Obata. Sorti en 2003 au Japon, il arrive en France en 2007, édité par Kana. 
-                En 2015, 30 millions de tomes ont été vendu. Il est 10ème dans le classement des meilleurs mangas de l’Histoire (sondage fait en 2007). Suite à son succès, il est adapté en anime. 
+                dessiné par Takeshi Obata. Sorti en 2003 au Japon, il arrive en France en 2007, édité par Kana.
+                En 2015, 30 millions de tomes ont été vendu. Il est 10ème dans le classement des meilleurs mangas de
+                l’Histoire (sondage fait en 2007). Suite à son succès, il est adapté en anime.
                 Il est diffusé en 2006 au Japon et en 2008 en France</p>
         </section>
 
         <section>
             <h3>Résumé du manga </h3>
 
-            <p>Que feriez-vous si vous possédiez le pouvoir de condamner une personne et de décider des détails de sa mort ? 
-                C’est ce qui arrive à Light Yagami, brillant lycéen de 17 ans qui trouve un jour un carnet, le « Death Note ». 
-                Sur la première page, une phrase simple : « L’humain dont le nom est inscrit dans le cahier meurt ». 
-                Seules conditions : connaître le vrai nom de la personne et son visage. 
+            <p>Que feriez-vous si vous possédiez le pouvoir de condamner une personne et de décider des détails de sa
+                mort ?
+                C’est ce qui arrive à Light Yagami, brillant lycéen de 17 ans qui trouve un jour un carnet, le « Death
+                Note ».
+                Sur la première page, une phrase simple : « L’humain dont le nom est inscrit dans le cahier meurt ».
+                Seules conditions : connaître le vrai nom de la personne et son visage.
             </p>
 
-            <p>Light va utiliser ce carnet pour tuer des criminels du monde entier. 
-                Il veut ainsi purger ce monde qu’il juge pourri et corrompu pour créer un monde utopique dont il sera le Dieu. 
-                Il se fait ainsi appeler Kira (tueur en Japonais). Sans conséquence au début, le gouvernement le recherche ensuite. 
-                Pour l’arrêter, le gouvernement engage L, un détective de génie. 
-                Dans sa quête de justice, il n’hésite pas à sacrifier des vies humaines. 
+            <p>Light va utiliser ce carnet pour tuer des criminels du monde entier.
+                Il veut ainsi purger ce monde qu’il juge pourri et corrompu pour créer un monde utopique dont il sera le
+                Dieu.
+                Il se fait ainsi appeler Kira (tueur en Japonais). Sans conséquence au début, le gouvernement le
+                recherche ensuite.
+                Pour l’arrêter, le gouvernement engage L, un détective de génie.
+                Dans sa quête de justice, il n’hésite pas à sacrifier des vies humaines.
                 Kira, convaincu de faire le bien, veut tuer L qui lui barre la route.
-                Une course commence pour savoir qui trouvera l’identité de l’autre en premier. 
+                Une course commence pour savoir qui trouvera l’identité de l’autre en premier.
             </p>
 
-            <p>Le Death Note se révèle vite être un livre du Dieu de la Mort, Ryûk. 
-                S’ennuyant dans son monde, il fait délibérément « tomber » son carnet pour qu’un humain le trouve. 
-                Visible uniquement par les humains qui possèdent le Death Note, il prend ainsi plaisir à observer la société humaine.
-                Light étant le nouveau propriétaire du Death Note, Ryûk doit le suivre partout. 
+            <p>Le Death Note se révèle vite être un livre du Dieu de la Mort, Ryûk.
+                S’ennuyant dans son monde, il fait délibérément « tomber » son carnet pour qu’un humain le trouve.
+                Visible uniquement par les humains qui possèdent le Death Note, il prend ainsi plaisir à observer la
+                société humaine.
+                Light étant le nouveau propriétaire du Death Note, Ryûk doit le suivre partout.
                 Ryûk aime manger des pommes, symbole présent tout au long du manga
             </p>
 
             <img src="/public/img/extrait_page_gauche.webp" alt="Extrait d'une page gauche du livre Death Note">
             <img src="/public/img/extrait_page_droite.webp" alt="Extrait d'une page droite du livre Death Note">
-            <p>Extrait d'une double page du tome 1 de Death Note, où les deux partis pensent incarner la justice. Ryûk, de son côté, se rejouit d'être un spectateur.</p>
+            <p>Extrait d'une double page du tome 1 de Death Note, où les deux partis pensent incarner la justice. Ryûk,
+                de son côté, se rejouit d'être un spectateur.</p>
         </section>
 
         <section>
             <h3>Light le mal et L la justice ?</h3>
 
-            <p>Cela est beaucoup plus nuancé. 
-                L qui est censé représenter le bien et la justice, n’hésite pas à sacrifier des vies humaines pour arriver à son objectif.
-                Ses alliés font aussi de même, n’hésitant pas à bafouer leurs idéaux. 
-                D’un autre côté, Light tue quiconque s’oppose à lui, innocent ou non. 
+            <p>Cela est beaucoup plus nuancé.
+                L qui est censé représenter le bien et la justice, n’hésite pas à sacrifier des vies humaines pour
+                arriver à son objectif.
+                Ses alliés font aussi de même, n’hésitant pas à bafouer leurs idéaux.
+                D’un autre côté, Light tue quiconque s’oppose à lui, innocent ou non.
             </p>
 
-            <p>Cependant, à la fin du manga, il y a un retour à la violence lié à la mort de Light. 
-                La paix installée à cause de la peur d’être puni par Kira disparait, et le chaos revient. 
-                Cela amène plusieurs personnes à regretter la mort de l’adolescent. 
-                Si pour certains Kira est un criminel, d’autres vont le soutenir, le voyant comme un Dieu. 
+            <p>Cependant, à la fin du manga, il y a un retour à la violence lié à la mort de Light.
+                La paix installée à cause de la peur d’être puni par Kira disparait, et le chaos revient.
+                Cela amène plusieurs personnes à regretter la mort de l’adolescent.
+                Si pour certains Kira est un criminel, d’autres vont le soutenir, le voyant comme un Dieu.
             </p>
         </section>
 
@@ -118,19 +133,22 @@
             <h3>Les clés de son succès</h3>
 
             <p>
-                Ce qui a fait de Death Note un manga culte, c’est avant tout le fait qu’il explore les sujets politiques et philosophiques tout en les rendant accessible à tous. 
-                Le thème de bien et du mal est abordé jusqu’à son paroxysme. 
+                Ce qui a fait de Death Note un manga culte, c’est avant tout le fait qu’il explore les sujets politiques
+                et philosophiques tout en les rendant accessible à tous.
+                Le thème de bien et du mal est abordé jusqu’à son paroxysme.
             </p>
 
             <p>
-                L’autre point, c’est que l'adolescent n'est pas un anti-héro comme les autres, celui- ci passe d’un lycéen surdoué normal à quelqu’un sans humanité. 
-                Mais il est manipulateur, froid et hyper-intelligent. 
-                C’est l’opposé des héros de shonen habituels, très attachants mais un peu idiots (comme Sangoku ou Luffy). 
+                L’autre point, c’est que l'adolescent n'est pas un anti-héro comme les autres, celui- ci passe d’un
+                lycéen surdoué normal à quelqu’un sans humanité.
+                Mais il est manipulateur, froid et hyper-intelligent.
+                C’est l’opposé des héros de shonen habituels, très attachants mais un peu idiots (comme Sangoku ou
+                Luffy).
             </p>
         </section>
 
-        <a href="page_2.html">Article du Film Netflix 
-            <img src="/public/img/icone_page_suivante.webp" alt="Icone d'une flèche pour indiquer une page suivante"> 
+        <a href="page_2.html">Article du Film Netflix
+            <img src="/public/img/icone_page_suivante.webp" alt="Icone d'une flèche pour indiquer une page suivante">
         </a>
 
         <section>
@@ -148,14 +166,15 @@
             <img src="/public/img/All_you_need_is_kill.webp" alt="Image du livre All you need is kill">
             <img src="/public/img/Blue_Dragon.webp" alt="Image du livre Blue Dragon">
         </section>
-        
+
     </main>
 
-    <footer>
-        <a href="http://mmimontbeliard.com/">
-        <img src="/public/img/logo_mmi.webp" alt="Logo du site du département MMI de Montbéliard"></a>
+    <footer class="footer">
+        <a class="footer__link" href="http://mmimontbeliard.com/">
+            <img src="/public/img/logo_mmi.png" alt="Logo du site du département MMI de Montbéliard"></a>
         <p>PierrePolJ</p>
         <p>PierrePolJ - Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</p>
     </footer>
 </body>
+
 </html>

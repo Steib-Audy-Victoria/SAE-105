@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,16 @@
 
     <!-- Déclaration de la feuille de style -->
     <link rel="stylesheet" href="/src/css/style.css">
-    
+
     <!-- Chargement de la librairie Alpine JS -->
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 
 </head>
+
 <body x-data="{ atTop : false }">
 
-    <header class="header"
-            :class="atTop && 'header--atTop'"
-            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+    <header class="header" :class="atTop && 'header--atTop'"
+        @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
         <div class="header__caption">
             <div class="header__start">
                 <a class="header__link" href="/">
@@ -28,10 +29,9 @@
 
             <div class="header__end">
                 <!--Menu Hamburger-->
-                <button class="header__menu-btn menu-btn"
-                @click="menuIsOpen = !menuIsOpen"
-                :class="menuIsOpen && 'menu-btn--open'">
-                <span class="menu-btn__bar"></span>
+                <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen"
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
                 </button>
             </div>
         </div>
@@ -39,29 +39,37 @@
         <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
             <ul class="menu__list list-unstyled">
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="index.html">Accueil</a></li>
+                    <a class="menu__link menu__bar" href="index.html">Accueil</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_1.html">Death Note, un chef d'oeuvre</a></li>
+                    <a class="menu__link menu__bar" href="page_1.html">Death Note, un chef d'oeuvre</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_2.html">Death Note, le film Netflix</a></li>
+                    <a class="menu__link menu__bar" href="page_2.html">Death Note, le film Netflix</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_3.html">La justice française</a></li>
+                    <a class="menu__link menu__bar" href="page_3.html">La justice française</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="autres_projets.html">Autres projets</a></li>
+                    <a class="menu__link menu__bar" href="autres_projets.html">Autres projets</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__nonbar" href="a_propos.html">A propos </a></li>
+                    <a class="menu__link menu__nonbar" href="a_propos.html">A propos </a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__nonbar text__blanc" href="formulaire.html">Contact</a></li>
+                    <a class="menu__link menu__nonbar text__blanc" href="formulaire.html">Contact</a>
+                </li>
             </ul>
         </nav>
-        
+
     </header>
 
     <main>
-        <p>Ce site conçu pour être responsive s'inscrit dans un projet individuel de MMI. Voici d'autres projets que mes camarades du groupe B2 ont</p>
+        <p>Ce site conçu pour être responsive s'inscrit dans un projet individuel de MMI. Voici d'autres projets que mes
+            camarades du groupe B2 ont</p>
         <p>BRUGNONI Louis : <b>Agoria </b></p>
         <p>COULON Salomé : <b>Le guide du tueur</b></p>
-        <p>COURROY Quentin : <b>HorriFying  </b></p>
+        <p>COURROY Quentin : <b>HorriFying </b></p>
         <p>CUGNIET Simon : <b>Odyssia </b></p>
         <p>JACQUEMARD Davy : <b>Art & Pouvoir</b></p>
         <p>JAYET Clothilde : <b>Ecosys'Terre </b></p>
@@ -73,11 +81,12 @@
         <p>EL MOUMANE Sanâa :<b>Kids gourmandises </b></p>
     </main>
 
-    <footer>
-        <a href="http://mmimontbeliard.com/">
-        <img src="/public/img/logo_mmi.webp" alt="Logo du site du département MMI de Montbéliard"></a>
+    <footer class="footer">
+        <a class="footer__link" href="http://mmimontbeliard.com/">
+            <img src="/public/img/logo_mmi.png" alt="Logo du site du département MMI de Montbéliard"></a>
         <p>PierrePolJ</p>
         <p>PierrePolJ - Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</p>
     </footer>
 </body>
+
 </html>

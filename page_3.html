@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,16 @@
 
     <!-- Déclaration de la feuille de style -->
     <link rel="stylesheet" href="/src/css/style.css">
-    
+
     <!-- Chargement de la librairie Alpine JS -->
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 
 </head>
+
 <body x-data="{ atTop : false }">
 
-    <header class="header"
-            :class="atTop && 'header--atTop'"
-            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+    <header class="header" :class="atTop && 'header--atTop'"
+        @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
         <div class="header__caption">
             <div class="header__start">
                 <a class="header__link" href="/">
@@ -28,10 +29,9 @@
 
             <div class="header__end">
                 <!--Menu Hamburger-->
-                <button class="header__menu-btn menu-btn"
-                @click="menuIsOpen = !menuIsOpen"
-                :class="menuIsOpen && 'menu-btn--open'">
-                <span class="menu-btn__bar"></span>
+                <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen"
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
                 </button>
             </div>
         </div>
@@ -39,33 +39,43 @@
         <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
             <ul class="menu__list list-unstyled">
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="index.html">Accueil</a></li>
+                    <a class="menu__link menu__bar" href="index.html">Accueil</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_1.html">Death Note, un chef d'oeuvre</a></li>
+                    <a class="menu__link menu__bar" href="page_1.html">Death Note, un chef d'oeuvre</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_2.html">Death Note, le film Netflix</a></li>
+                    <a class="menu__link menu__bar" href="page_2.html">Death Note, le film Netflix</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_3.html">La justice française</a></li>
+                    <a class="menu__link menu__bar" href="page_3.html">La justice française</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="autres_projets.html">Autres projets</a></li>
+                    <a class="menu__link menu__bar" href="autres_projets.html">Autres projets</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__nonbar" href="a_propos.html">A propos </a></li>
+                    <a class="menu__link menu__nonbar" href="a_propos.html">A propos </a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__nonbar text__blanc" href="formulaire.html">Contact</a></li>
+                    <a class="menu__link menu__nonbar text__blanc" href="formulaire.html">Contact</a>
+                </li>
             </ul>
         </nav>
-        
+
     </header>
 
     <main>
         <section>
             <!--Intro de la page-->
-            <img src="/public/img/Representation_justice_Balance.webp" alt="Image d'une balance pour représenter la justice">
+            <img src="/public/img/Representation_justice_Balance.webp"
+                alt="Image d'une balance pour représenter la justice">
             <h2>La justice</h2>
             <p>
-                Dans les précédents articles j’ai parlé du manga Death Note et de son adaptation en film par Netflix. 
-                Maintenant, je vais faire un zoom sur la justice. Car si tuer des criminels est considéré comme un crime, L utilise des meurtriers (certains vont mourir) pour capturer Kira. 
-                Cela n’est pas trop moral non plus. Alors objectivement, que dit la loi ? Et comment les enquêtes sont-elles réalisées ?
+                Dans les précédents articles j’ai parlé du manga Death Note et de son adaptation en film par Netflix.
+                Maintenant, je vais faire un zoom sur la justice. Car si tuer des criminels est considéré comme un
+                crime, L utilise des meurtriers (certains vont mourir) pour capturer Kira.
+                Cela n’est pas trop moral non plus. Alors objectivement, que dit la loi ? Et comment les enquêtes
+                sont-elles réalisées ?
             </p>
         </section>
 
@@ -73,20 +83,25 @@
             <!--Partie 1-->
             <h3>Que dit la loi française ?</h3>
             <p>
-                Le meurtre est le « fait de donner volontairement la mort à autrui » (article 221-1 du code pénal) et peut être puni de trente ans de réclusion criminelle. 
-                Et ce, quelque soit la personne et ses antécédents (même si c’est un ancien meurtrier). 
+                Le meurtre est le « fait de donner volontairement la mort à autrui » (article 221-1 du code pénal) et
+                peut être puni de trente ans de réclusion criminelle.
+                Et ce, quelque soit la personne et ses antécédents (même si c’est un ancien meurtrier).
                 On peut donc en conclure que ni Kira ni L ne sont dans la légalité.
             </p>
             <p>
-                Pourtant, tout le monde a déjà entendu parler de la loi du talion « Œil pour œil, dent pour dent ». 
-                Celle-ci n’est pas reconnue par la justice. Le seul moment où l’on peut user de la force, c’est en légitime défense. 
-                Mais peut-on tuer quelqu’un pour se défendre, soi-même ou ses proches ? En théorie oui, mais faut-il encore prouver que l’on n’avait pas d’autres choix. 
+                Pourtant, tout le monde a déjà entendu parler de la loi du talion « Œil pour œil, dent pour dent ».
+                Celle-ci n’est pas reconnue par la justice. Le seul moment où l’on peut user de la force, c’est en
+                légitime défense.
+                Mais peut-on tuer quelqu’un pour se défendre, soi-même ou ses proches ? En théorie oui, mais faut-il
+                encore prouver que l’on n’avait pas d’autres choix.
                 On peut par exemple appeler la police au lieu de tuer un cambrioleur.
             </p>
 
             <q>
-                N'est pas pénalement responsable la personne qui, devant une atteinte injustifiée envers elle- même ou autrui, accomplit, dans le même temps, 
-                un acte commandé par la nécessité de la légitime défense d'elle-même ou d'autrui, sauf s'il y a disproportion entre les moyens de défense employés et la gravité de l'atteinte 
+                N'est pas pénalement responsable la personne qui, devant une atteinte injustifiée envers elle- même ou
+                autrui, accomplit, dans le même temps,
+                un acte commandé par la nécessité de la légitime défense d'elle-même ou d'autrui, sauf s'il y a
+                disproportion entre les moyens de défense employés et la gravité de l'atteinte
             </q>
             <p>(article 122-5 du code pénal)</p>
         </section>
@@ -96,21 +111,26 @@
             <h3>Comment mène-t-on une enquête pour meurtre ?</h3>
 
             <img src="/public/img/Meurtre.webp" alt="Image d'une scène de crime">
-            <p>Une scène de crime. On y voit la position de la victime quand elle a été retrouvée et les différentes preuves autour.</p>
+            <p>Une scène de crime. On y voit la position de la victime quand elle a été retrouvée et les différentes
+                preuves autour.</p>
 
-            <p>Il y a plusieurs étapes dans une enquête. Tout d’abord, des recherches sont menées sur place. Il faut :</p>
+            <p>Il y a plusieurs étapes dans une enquête. Tout d’abord, des recherches sont menées sur place. Il faut :
+            </p>
 
             <h5>1. Trouver un corps</h5>
             <p>
-                Sans corps, il est difficile de commencer une enquête, sauf dans des cas particuliers. 
-                Cela peut-être la disparition d’une personne ou l’on est certain qu’elle est morte. 
-                Dès qu’un appel est passé au 17, toutes les autorités compétentes sont prévenues (procureur, chef de brigade, médecin légiste ...).
+                Sans corps, il est difficile de commencer une enquête, sauf dans des cas particuliers.
+                Cela peut-être la disparition d’une personne ou l’on est certain qu’elle est morte.
+                Dès qu’un appel est passé au 17, toutes les autorités compétentes sont prévenues (procureur, chef de
+                brigade, médecin légiste ...).
             </p>
 
             <h5>2. Sécuriser la zone autour du corps</h5>
             <p>
-                A l’arrivée de la police, ceux-ci sécurisent la scène de crime, en utilisant des rubalises (les rubans jaunes qu’on voit dans les séries). 
-                Cela évite d’avoir des civils qui vont salir la zone. Dans le cas où des personnes peuvent être sauvées, les secours passent avant. 
+                A l’arrivée de la police, ceux-ci sécurisent la scène de crime, en utilisant des rubalises (les rubans
+                jaunes qu’on voit dans les séries).
+                Cela évite d’avoir des civils qui vont salir la zone. Dans le cas où des personnes peuvent être sauvées,
+                les secours passent avant.
                 Cependant, cela n’arrange pas le travail des policiers.
             </p>
             <img src="/public/img/Meurtre_scene.webp" alt="Image d'une scène de crime avec banderolle">
@@ -118,20 +138,21 @@
 
             <h5>3. Arrivée de la police scientifique</h5>
             <p>
-                Très rapidement, la police scientifique arrive. 
+                Très rapidement, la police scientifique arrive.
                 Les policiers enfilent blouse, chaussures, gants et masque pour ne pas salir les lieux.
             </p>
 
             <h5>4. Prendre des photos pour "geler" la scène</h5>
             <p>
-                Pour ne pas rater le moindre détail, absolument tout est pris en photo. 
-                Les traces de sang, de chaussure, jusqu’au plaies de la victime. 
-                Cela permet de savoir l’emplacement des éléments même plusieurs semaines voire plusieurs années après les faits.
+                Pour ne pas rater le moindre détail, absolument tout est pris en photo.
+                Les traces de sang, de chaussure, jusqu’au plaies de la victime.
+                Cela permet de savoir l’emplacement des éléments même plusieurs semaines voire plusieurs années après
+                les faits.
             </p>
 
             <h5>5. Identifier le cadavre si possible</h5>
-            <p>Après avoir pris des photos, la police essaye d’identifier le cadavre. 
-                Il a peut-être ses papiers sur lui (carte d’identité, passeport, permis ...). 
+            <p>Après avoir pris des photos, la police essaye d’identifier le cadavre.
+                Il a peut-être ses papiers sur lui (carte d’identité, passeport, permis ...).
                 Si rien n’est trouvé, son ADN permettra peut-être de connaître son nom.</p>
 
             <h5>6. Le médecin légiste</h5>
@@ -139,19 +160,20 @@
 
             <h5>7. Recherche des témoins</h5>
             <p>
-                La police va ensuite interroger les personnes présentes au moment des faits. 
-                Ceux-ci peuvent apporter une grande aide pour avoir une piste par où commencer. 
+                La police va ensuite interroger les personnes présentes au moment des faits.
+                Ceux-ci peuvent apporter une grande aide pour avoir une piste par où commencer.
                 Les auditions commencent immédiatement pour éviter qu’ils oublient des détails.
             </p>
 
             <h5>8. Essayer de comprendre les circonstances de la mort (suicide, accident, meurtre ?)</h5>
             <img src="/public/img/empreinte.webp" alt="Image d'une empreinte de doigt">
             <p>Empreinte relevée sur une scène de crime</p>
-            <p>Tous les potentiels indices trouvés dans la zone seront relevés (traces de sang, de semelle, empreintes, mégots, ...).</p>
+            <p>Tous les potentiels indices trouvés dans la zone seront relevés (traces de sang, de semelle, empreintes,
+                mégots, ...).</p>
 
             <h5>9. Faire des tests pour avoir de vraies preuves</h5>
             <p>
-                Le sang retrouvé un petit peu plus loin du cadavre est-il d’origine humaine ? 
+                Le sang retrouvé un petit peu plus loin du cadavre est-il d’origine humaine ?
                 De tels doutes peuvent et doivent être immédiatement éliminés.
             </p>
 
@@ -159,47 +181,51 @@
 
             <h5>10. Une fois toute la zone passée au crible, le corps est emmené dans un institut médico-légal.</h5>
             <p>
-                Le corps arrivé dans un institut médico-légal, le rôle du médecin légiste continue. 
-                Il doit comprendre exactement les circonstances de la mort. Toutes les étapes sont photographiées. 
+                Le corps arrivé dans un institut médico-légal, le rôle du médecin légiste continue.
+                Il doit comprendre exactement les circonstances de la mort. Toutes les étapes sont photographiées.
                 Chaque élément est mis sous scellé (montre, vêtement, peau, ...).
             </p>
 
             <h5>11. Poursuite des auditions</h5>
             <p>
-                Les auditions se poursuivent. Les témoins peuvent se souvenir de quelque chose. 
+                Les auditions se poursuivent. Les témoins peuvent se souvenir de quelque chose.
                 Les proches de la victime peuvent permettre de repérer un changement dans ses habitudes.
             </p>
 
-            <h5>12. Représentation de la scène de crime avec des technologies ultra avancé 
+            <h5>12. Représentation de la scène de crime avec des technologies ultra avancé
                 (modélisation 3D de la scène avec le laser/scanner).</h5>
             <p>
-                Aujourd’hui, des technologies ultra avancées peuvent permettre de résoudre des affaires compliquées. 
-                Par exemple, on peut modéliser en 3D la scène avec le laser/scanner. Cela permet de ne rater aucun détail, même ceux invisibles à l’œil nu. 
-                Cela permet aussi d’éviter que les enquêteurs retournent sur place pour une mesure de distance qu’ils auraient oublié par exemple.
+                Aujourd’hui, des technologies ultra avancées peuvent permettre de résoudre des affaires compliquées.
+                Par exemple, on peut modéliser en 3D la scène avec le laser/scanner. Cela permet de ne rater aucun
+                détail, même ceux invisibles à l’œil nu.
+                Cela permet aussi d’éviter que les enquêteurs retournent sur place pour une mesure de distance qu’ils
+                auraient oublié par exemple.
             </p>
 
             <h5>13. Faire des tests</h5>
             <p>
-                Pour ne laisser place à aucun doute, des tests sont effectués. 
-                Par exemple, si la victime a été tuée par balle, on va tirer sur des cibles, avec la même arme que celle utilisée. 
-                Cela sert à connaître la distance entre les deux personnes. 
-                Ceci pour éviter d’avoir des excuses comme quoi ce n’était pas un tir intentionnel. 
-                Ou que l’homme n’a pas reconnu sa femme et pensait que c’était un cambrioleur. 
+                Pour ne laisser place à aucun doute, des tests sont effectués.
+                Par exemple, si la victime a été tuée par balle, on va tirer sur des cibles, avec la même arme que celle
+                utilisée.
+                Cela sert à connaître la distance entre les deux personnes.
+                Ceci pour éviter d’avoir des excuses comme quoi ce n’était pas un tir intentionnel.
+                Ou que l’homme n’a pas reconnu sa femme et pensait que c’était un cambrioleur.
                 Il y a un réel intérêt, car la différence de peine entre un homicide
             </p>
         </section>
 
         <a href="page_3.html">
-            <img src="/public/img/icone_page_suivante.webp" alt="Icone d'une flèche pour indiquer une page suivante"> 
+            <img src="/public/img/icone_page_suivante.webp" alt="Icone d'une flèche pour indiquer une page suivante">
             Article du film Netflix
         </a>
     </main>
 
-    <footer>
-        <a href="http://mmimontbeliard.com/">
-        <img src="/public/img/logo_mmi.webp" alt="Logo du site du département MMI de Montbéliard"></a>
+    <footer class="footer">
+        <a class="footer__link" href="http://mmimontbeliard.com/">
+            <img src="/public/img/logo_mmi.png" alt="Logo du site du département MMI de Montbéliard"></a>
         <p>PierrePolJ</p>
         <p>PierrePolJ - Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</p>
     </footer>
 </body>
+
 </html>

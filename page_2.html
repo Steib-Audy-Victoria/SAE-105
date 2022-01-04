@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,16 @@
 
     <!-- Déclaration de la feuille de style -->
     <link rel="stylesheet" href="/src/css/style.css">
-    
+
     <!-- Chargement de la librairie Alpine JS -->
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 
 </head>
+
 <body x-data="{ atTop : false }">
 
-    <header class="header"
-            :class="atTop && 'header--atTop'"
-            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+    <header class="header" :class="atTop && 'header--atTop'"
+        @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
         <div class="header__caption">
             <div class="header__start">
                 <a class="header__link" href="/">
@@ -28,10 +29,9 @@
 
             <div class="header__end">
                 <!--Menu Hamburger-->
-                <button class="header__menu-btn menu-btn"
-                @click="menuIsOpen = !menuIsOpen"
-                :class="menuIsOpen && 'menu-btn--open'">
-                <span class="menu-btn__bar"></span>
+                <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen"
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
                 </button>
             </div>
         </div>
@@ -39,22 +39,29 @@
         <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
             <ul class="menu__list list-unstyled">
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="index.html">Accueil</a></li>
+                    <a class="menu__link menu__bar" href="index.html">Accueil</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_1.html">Death Note, un chef d'oeuvre</a></li>
+                    <a class="menu__link menu__bar" href="page_1.html">Death Note, un chef d'oeuvre</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_2.html">Death Note, le film Netflix</a></li>
+                    <a class="menu__link menu__bar" href="page_2.html">Death Note, le film Netflix</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_3.html">La justice française</a></li>
+                    <a class="menu__link menu__bar" href="page_3.html">La justice française</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="autres_projets.html">Autres projets</a></li>
+                    <a class="menu__link menu__bar" href="autres_projets.html">Autres projets</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__nonbar" href="a_propos.html">A propos </a></li>
+                    <a class="menu__link menu__nonbar" href="a_propos.html">A propos </a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__nonbar text__blanc" href="formulaire.html">Contact</a></li>
+                    <a class="menu__link menu__nonbar text__blanc" href="formulaire.html">Contact</a>
+                </li>
             </ul>
         </nav>
-        
+
     </header>
 
     <main>
@@ -62,31 +69,36 @@
             <!--Intro de la page-->
             <img src="/public/img/Death_Note_Film.webp" alt="Image du film Death Note">
             <h2>Death Note, le film Netflix</h2>
-            <p>Le succès du manga Death Note a inspiré Netflix qui a décidé de l’adapter en film. 
-                Ce film est sorti le 25 août 2017. 
-                Dans un premier article j’ai détaillé l’histoire du manga. Vous le retrouverez ici. 
-                Dans cet article je donnerai mon avis avec les principales différences manga / film. 
+            <p>Le succès du manga Death Note a inspiré Netflix qui a décidé de l’adapter en film.
+                Ce film est sorti le 25 août 2017.
+                Dans un premier article j’ai détaillé l’histoire du manga. Vous le retrouverez ici.
+                Dans cet article je donnerai mon avis avec les principales différences manga / film.
                 Je vous propose de regarder la bande annonce du film ci-dessous :
             </p>
 
             <!--Bande Annonce du film Death Note de Netflix (2017)-->
-            <iframe width="950" height="534" src="https://www.youtube.com/embed/r7d4sBCztbE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="950" height="534" src="https://www.youtube.com/embed/r7d4sBCztbE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </section>
 
         <section>
             <!--Partie 1-->
             <h3>Les principales différences avec le manga : </h3>
             <p>
-                - L’action passe du Japon aux Etats-Unis. On retrouve donc toutes les traditions américaines (pom-pom Girl, bal de promotion)
+                - L’action passe du Japon aux Etats-Unis. On retrouve donc toutes les traditions américaines (pom-pom
+                Girl, bal de promotion)
             </p>
             <p>
-                - Light aime sincèrement Mia dans le film, alors qu’il la manipule complétement dans le manga. 
+                - Light aime sincèrement Mia dans le film, alors qu’il la manipule complétement dans le manga.
                 Elle va même inverser les rôles de manipulateur/ manipulée, en manipulant presque Light.
             </p>
             <p>
-                - Seul le père de Light est toujours vivant. 
-                Sa mère est morte, devenant un prétexte pour sa vengeance, et sa sœur inexistante. 
-                Pourtant dans le manga, Light a une famille entière (avec un père, une mère, et une sœur), heureuse, et sans problème.
+                - Seul le père de Light est toujours vivant.
+                Sa mère est morte, devenant un prétexte pour sa vengeance, et sa sœur inexistante.
+                Pourtant dans le manga, Light a une famille entière (avec un père, une mère, et une sœur), heureuse, et
+                sans problème.
             </p>
         </section>
 
@@ -94,19 +106,21 @@
             <!--Partie 2-->
             <h3>Que penser de ce film ?</h3>
             <p>
-                Il y a deux camps : ceux qui détestent ce film, très peu fidèle au manga, et ceux qui aiment ces différences. 
+                Il y a deux camps : ceux qui détestent ce film, très peu fidèle au manga, et ceux qui aiment ces
+                différences.
                 Mais qu’on aime ou pas, l’effort esthétique et musical est bien là.
             </p>
 
             <p>Le scénariste Tsugumi Oba a déclaré :</p>
             <q>
-                C’était plus intéressant que je le croyais. 
-                Chaque morceau est de qualité et à la mode. C’est définitivement le Death note de Hollywood. 
-                Je pense que beaucoup de personnes peuvent apprécier ce film, pas seulement les fans, parce que certaines parties suivent le travail original mais apportent aussi des changements.
+                C’était plus intéressant que je le croyais.
+                Chaque morceau est de qualité et à la mode. C’est définitivement le Death note de Hollywood.
+                Je pense que beaucoup de personnes peuvent apprécier ce film, pas seulement les fans, parce que
+                certaines parties suivent le travail original mais apportent aussi des changements.
             </q>
 
             <p>
-                Le mieux est donc de voir le film pour se forger son avis ! 
+                Le mieux est donc de voir le film pour se forger son avis !
             </p>
 
             <img src="/public/img/IllustrationDNF.webp" alt="Illustration du film Death Note">
@@ -117,18 +131,21 @@
             <!--Partie 3-->
             <h3>Mon avis</h3>
             <p>
-                Je n’ai pas aimé le film. 
-                Malgré des belles musiques et de très belles images, je n’ai pas pu m’empêcher de détester L et Light. 
-                Tout leur charisme a été enlevé. Light est un adolescent lambda, avec des interactions lambda. 
-                Au tout début, Light intervient pour secourir une fille maltraitée par d’autres jeunes, et se fait alors tabasser. Les professeurs ne comprennent pas qu’il est une victime et le victimise encore plus. 
-                Aussi, sa mère a été tuée et il recherche sa vengeance. Tout ça pour expliquer le caractère du personnage mais cela lui enlève son charisme. 
-                En effet, difficile d’aimer une victime pour son côté manipulateur ... D’ailleurs, ni L ni Light ne sont super intelligents, et ils sont même plutôt le contraire. 
+                Je n’ai pas aimé le film.
+                Malgré des belles musiques et de très belles images, je n’ai pas pu m’empêcher de détester L et Light.
+                Tout leur charisme a été enlevé. Light est un adolescent lambda, avec des interactions lambda.
+                Au tout début, Light intervient pour secourir une fille maltraitée par d’autres jeunes, et se fait alors
+                tabasser. Les professeurs ne comprennent pas qu’il est une victime et le victimise encore plus.
+                Aussi, sa mère a été tuée et il recherche sa vengeance. Tout ça pour expliquer le caractère du
+                personnage mais cela lui enlève son charisme.
+                En effet, difficile d’aimer une victime pour son côté manipulateur ... D’ailleurs, ni L ni Light ne sont
+                super intelligents, et ils sont même plutôt le contraire.
                 Néanmoins, certains dirons que c'est pour donner un coté humain aux personnages.
             </p>
         </section>
 
-        <a href="page_3.html">Article sur la justice 
-            <img src="/public/img/icone_page_suivante.webp" alt="Icone d'une flèche pour indiquer une page suivante"> 
+        <a href="page_3.html">Article sur la justice
+            <img src="/public/img/icone_page_suivante.webp" alt="Icone d'une flèche pour indiquer une page suivante">
         </a>
 
         <section>
@@ -140,11 +157,12 @@
 
     </main>
 
-    <footer>
-        <a href="http://mmimontbeliard.com/">
-        <img src="/public/img/logo_mmi.webp" alt="Logo du site du département MMI de Montbéliard"></a>
+    <footer class="footer">
+        <a class="footer__link" href="http://mmimontbeliard.com/">
+            <img src="/public/img/logo_mmi.png" alt="Logo du site du département MMI de Montbéliard"></a>
         <p>PierrePolJ</p>
         <p>PierrePolJ - Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</p>
     </footer>
 </body>
+
 </html>
