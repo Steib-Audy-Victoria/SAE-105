@@ -91,3 +91,12 @@ function descendreLegende2() {
     }).play;
 }
 
+/*cacher */
+function cacher(cla) {
+    console.log('Appel à la fonction cacher détecté : ' + cla);
+    let paragraphes = document.querySelectorAll('.' + cla);
+    paragraphes.forEach(function (p, i) {
+        if (p.style.display == 'none') p.style.display = 'block';
+        else p.style.display = 'none';
+    });
+}
