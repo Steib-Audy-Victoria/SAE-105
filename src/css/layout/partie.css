@@ -9,6 +9,11 @@
     align-items: flex-start;
 }
 
+.part_img1 {
+    width: 179px;
+    height: 280px;
+}
+
 .part__exp_img {
     font-size: var(--exp--img);
     text-align: center;
