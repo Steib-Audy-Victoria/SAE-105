@@ -95,7 +95,7 @@ function descendreLegende2() {
     }).play;
 }
 
-/*cacher */
+/*cacher*/
 function cacher(cla) {
     console.log('Appel à la fonction cacher détecté : ' + cla);
     let paragraphes = document.querySelectorAll('.' + cla);
