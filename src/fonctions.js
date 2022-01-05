@@ -52,6 +52,7 @@ function monterLegende() {
     txt_leg.style.display = 'block';
     return anime({
         targets: '.txt_leg',
+        backgroundColor: 'white',
         translateY: '-6em',
         autoplay: false,
         easing: 'linear',
@@ -62,6 +63,7 @@ function monterLegende() {
 function descendreLegende() {
     return anime({
         targets: '.txt_leg',
+        backgroundColor: 'transparent',
         translateY: '0',
         autoplay: false,
         easing: 'linear',
