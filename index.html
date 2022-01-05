@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no" , initial-scale=1.0>
     <title>Madness of Manga - Page d'accueil</title>
 
     <!-- Déclaration de la feuille de style -->
     <link rel="stylesheet" href="/src/css/style.css">
-    
+
     <!-- Chargement de la librairie Alpine JS -->
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 
 </head>
+
 <body x-data="{ atTop : false }">
 
-    <header class="header"
-            :class="atTop && 'header--atTop'"
-            @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
+    <header class="header" :class="atTop && 'header--atTop'"
+        @scroll.window="atTop = (window.scrollY > 300 ? true : false)">
         <div class="header__caption">
             <div class="header__start">
                 <a class="header__link" href="/">
@@ -28,10 +29,9 @@
 
             <div class="header__end">
                 <!--Menu Hamburger-->
-                <button class="header__menu-btn menu-btn"
-                @click="menuIsOpen = !menuIsOpen"
-                :class="menuIsOpen && 'menu-btn--open'">
-                <span class="menu-btn__bar"></span>
+                <button class="header__menu-btn menu-btn" @click="menuIsOpen = !menuIsOpen"
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
                 </button>
             </div>
         </div>
@@ -39,65 +39,82 @@
         <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
             <ul class="menu__list list-unstyled">
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="index.html">Accueil</a></li>
+                    <a class="menu__link menu__bar" href="index.html">Accueil</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_1.html">Death Note, un chef d'oeuvre</a></li>
+                    <a class="menu__link menu__bar" href="page_1.html">Death Note, un chef d'oeuvre</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_2.html">Death Note, le film Netflix</a></li>
+                    <a class="menu__link menu__bar" href="page_2.html">Death Note, le film Netflix</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="page_3.html">La justice française</a></li>
+                    <a class="menu__link menu__bar" href="page_3.html">La justice française</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__bar" href="autres_projets.html">Autres projets</a></li>
+                    <a class="menu__link menu__bar" href="autres_projets.html">Autres projets</a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__nonbar" href="a_propos.html">A propos </a></li>
+                    <a class="menu__link menu__nonbar" href="a_propos.html">A propos </a>
+                </li>
                 <li class="menu__item">
-                    <a class="menu__link menu__nonbar text__blanc" href="formulaire.html">Contact</a></li>
+                    <a class="menu__link menu__nonbar text__blanc" href="formulaire.html">Contact</a>
+                </li>
             </ul>
         </nav>
-        
+
     </header>
 
     <main>
-        <p>Death Note est un manga devenu culte. 
-            Il arrive a nous immerger dans une réflexion du bien et du mal, aussi passionnante que complexe. 
+        <p>Death Note est un manga devenu culte.
+            Il arrive a nous immerger dans une réflexion du bien et du mal, aussi passionnante que complexe.
             Plongeons nous dans cet univers à la fois sombre et intrigant.</p>
 
         <article class="card">
-            <div class="gauche"><img src="/public/img/visuel_livre.webp" alt="Visuel pour l'article sur le livre Death Note"></div>
+            <div class="gauche"><img src="/public/img/visuel_livre.webp"
+                    alt="Visuel pour l'article sur le livre Death Note"></div>
             <div class="droite">
                 <h2>Death Note, un chef d'œuvre</h2>
                 <p>Dans un 1er article, je vous présenterais un classique dans le monde des mangas : Death Note</p>
                 <a class="card__link" href="page_1.html"> Lire l'article
                     <img src="/public/img/icone_page_suivante.png" alt="Icone d'une flèche">
                 </a>
-            </div> 
+            </div>
         </article>
 
         <article class="card">
-            <div class="gauche"><img src="/public/img/Film_Death_Note_Netflix.webp" alt="Visuel pour l'article sur le Film Death Note"></div>
-            <div class="droite"><h2>Death Note, le film Netflix</h2>
-            <p>Suite au succès du manga, Netflix en a fait un film. Je présenterais cette adaptation qui a des critiques très divisées.</p>
-            <a class="card__link" href="page_2.html"> Lire l'article
-                <img src="/public/img/icone_page_suivante.png" alt="Icone d'une flèche">
-            </a></div>        
+            <div class="gauche"><img src="/public/img/Film_Death_Note_Netflix.webp"
+                    alt="Visuel pour l'article sur le Film Death Note"></div>
+            <div class="droite">
+                <h2>Death Note, le film Netflix</h2>
+                <p>Suite au succès du manga, Netflix en a fait un film. Je présenterais cette adaptation qui a des
+                    critiques très divisées.</p>
+                <a class="card__link" href="page_2.html"> Lire l'article
+                    <img src="/public/img/icone_page_suivante.png" alt="Icone d'une flèche">
+                </a>
+            </div>
         </article>
 
         <article class="card">
-            <div class="gauche"><img src="/public/img/Representation_justice.webp" alt="Visuel pour l'article sur le justice"></div>
-            <div class="droite"><h2>La justice française</h2>
-            <p>L et Light pensent faire la justice. Mais dans la vraie vie, comment les enquêtes sont-elles réalisées ?</p>
-            <a class="card__link" href="page_3.html"> Lire l'article
-                <img src="/public/img/icone_page_suivante.png" alt="Icone d'une flèche">
-            </a></div>        
+            <div class="gauche"><img src="/public/img/Representation_justice.webp"
+                    alt="Visuel pour l'article sur le justice"></div>
+            <div class="droite">
+                <h2>La justice française</h2>
+                <p>L et Light pensent faire la justice. Mais dans la vraie vie, comment les enquêtes sont-elles
+                    réalisées ?</p>
+                <a class="card__link" href="page_3.html"> Lire l'article
+                    <img src="/public/img/icone_page_suivante.png" alt="Icone d'une flèche">
+                </a>
+            </div>
         </article>
-    
-    </main> 
+
+    </main>
 
     <footer class="footer">
         <a class="footer__link" href="http://mmimontbeliard.com/">
-        <img src="/public/img/logo_mmi.png" alt="Logo du site du département MMI de Montbéliard"></a>
+            <img src="/public/img/logo_mmi.png" alt="Logo du site du département MMI de Montbéliard"></a>
         <p>PierrePolJ</p>
         <p>PierrePolJ - Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</p>
     </footer>
 </body>
+
 </html>
