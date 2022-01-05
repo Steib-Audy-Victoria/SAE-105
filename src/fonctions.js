@@ -52,7 +52,7 @@ function monterLegende() {
     txt_leg.style.display = 'block';
     return anime({
         targets: '.txt_leg',
-        backgroundColor: 'white',
+        backgroundColor: '#FFF',
         translateY: '-6em',
         autoplay: false,
         easing: 'linear',
@@ -63,7 +63,7 @@ function monterLegende() {
 function descendreLegende() {
     return anime({
         targets: '.txt_leg',
-        backgroundColor: 'transparent',
+        backgroundColor: 'rgba(232, 232, 232, 1)',
         translateY: '0',
         autoplay: false,
         easing: 'linear',
@@ -76,6 +76,7 @@ function monterLegende2() {
     txt_leg2.style.display = 'block';
     return anime({
         targets: '.txt_leg2',
+        backgroundColor: '#FFF',
         translateY: '-6em',
         autoplay: false,
         easing: 'linear',
@@ -86,6 +87,7 @@ function monterLegende2() {
 function descendreLegende2() {
     return anime({
         targets: '.txt_leg2',
+        backgroundColor: 'rgba(232, 232, 232, 1)',
         translateY: '0',
         autoplay: false,
         easing: 'linear',
