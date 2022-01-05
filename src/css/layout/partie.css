@@ -15,21 +15,8 @@
 }
 
 .part__exp_img {
-    position: relative;
-	text-align: center;
     font-size: var(--exp--img);
-	width: 100%;
-	margin: 0px;
-	padding: 0px;
-	z-index: 1;
-	color: black;
-	background-color: rgba(255, 255, 255, 0.42);
-	top: 0;
-	display: none;
-}
-
-.img_leg {
-    z-index: 2;
+    text-align: center;
 }
 
 .part__miniTitle {
@@ -77,4 +64,3 @@
     width: 375px;
     height: 211px;
 }
-

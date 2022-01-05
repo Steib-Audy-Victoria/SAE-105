@@ -48,10 +48,10 @@ function carrousel() {
 /*légende*/
 
 function monterLegende() {
-    let textLg = document.querySelector(".textLg");
-    textLg.style.display = 'block';
+    let part__exp_img = document.querySelector(".part__exp_img");
+    part__exp_img.style.display = 'block';
     return anime({
-        targets: '.textLg',
+        targets: '.part__exp_img',
         translateY: '-5em',
         autoplay: false,
         easing: 'linear',
@@ -61,10 +61,12 @@ function monterLegende() {
 
 function descendreLegende() {
     return anime({
-        targets: '.textLg',
+        targets: '.part__exp_img',
         translateY: '5em',
         autoplay: false,
         easing: 'linear',
         duration: 200
     }).play;
 }
+
+/**/
