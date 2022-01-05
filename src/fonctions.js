@@ -44,3 +44,27 @@ function carrousel() {
         }
     });
 }
+
+/*légende*/
+
+function monterLegende() {
+    let textLg = document.querySelector(".textLg");
+    textLg.style.display = 'block';
+    return anime({
+        targets: '.textLg',
+        translateY: '-5em',
+        autoplay: false,
+        easing: 'linear',
+        duration: 200
+    }).play;
+}
+
+function descendreLegende() {
+    return anime({
+        targets: '.textLg',
+        translateY: '5em',
+        autoplay: false,
+        easing: 'linear',
+        duration: 200
+    }).play;
+}
