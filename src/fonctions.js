@@ -48,11 +48,11 @@ function carrousel() {
 /*légende*/
 
 function monterLegende() {
-    let part__exp_img = document.querySelector(".part__exp_img");
-    part__exp_img.style.display = 'block';
+    let txt_leg = document.querySelector(".txt_leg");
+    txt_leg.style.display = 'block';
     return anime({
-        targets: '.part__exp_img',
-        translateY: '-5em',
+        targets: '.txt_leg',
+        translateY: '-6em',
         autoplay: false,
         easing: 'linear',
         duration: 200
@@ -61,12 +61,33 @@ function monterLegende() {
 
 function descendreLegende() {
     return anime({
-        targets: '.part__exp_img',
-        translateY: '5em',
+        targets: '.txt_leg',
+        translateY: '0',
         autoplay: false,
         easing: 'linear',
         duration: 200
     }).play;
 }
 
-/**/
+function monterLegende2() {
+    let txt_leg2 = document.querySelector(".txt_leg2");
+    txt_leg2.style.display = 'block';
+    return anime({
+        targets: '.txt_leg2',
+        translateY: '-6em',
+        autoplay: false,
+        easing: 'linear',
+        duration: 200
+    }).play;
+}
+
+function descendreLegende2() {
+    return anime({
+        targets: '.txt_leg2',
+        translateY: '0',
+        autoplay: false,
+        easing: 'linear',
+        duration: 200
+    }).play;
+}
+

@@ -1,0 +1,55 @@
+.visionneuse {
+    display: grid;									/* Disposition en grille CSS */
+	grid-template-columns: 1fr 2fr 1fr;				/* Tailles des colonnes : chaque ligne contient 3 cellules */
+	row-gap: 0px;									/* Espacement entre les lignes */
+	column-gap: 0px;								/* Espacement entre les colonnes */
+	grid-auto-rows: minmax(100px, auto);
+
+    grid-column: 2;
+	grid-row: 2;
+	width: 375px;
+	height: 323px;
+	padding: 1px;
+	position: relative;
+	overflow: hidden;
+}
+
+.img_leg {
+    width: 100%;
+	z-index: 1;
+	position: relative;
+}
+
+.txt_leg {
+    position: relative;
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	z-index: 2;
+	line-height: 5em;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.55);
+	top: 0;
+	display: none;
+}
+
+.img_leg2 {
+    width: 100%;
+	z-index: 1;
+	position: relative;
+}
+
+.txt_leg2 {
+    position: relative;
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	z-index: 2;
+	line-height: 5em;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.55);
+	top: 0;
+	display: none;
+}

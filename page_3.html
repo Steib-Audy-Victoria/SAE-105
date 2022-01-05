@@ -116,10 +116,16 @@
             <!--Partie 2-->
             <h3 class="part__title">Comment mène-t-on une enquête pour meurtre ?</h3>
 
-            <img src="/public/img/Meurtre.webp" alt="Image d'une scène de crime">
-            <p class="part__exp_img">Une scène de crime. On y voit la position de la victime quand elle a été retrouvée
-                et les différentes
-                preuves autour.</p>
+            <div class="visionneuse">
+                <div class="img_leg" x-on:mouseover="monterLegende();" x-on:mouseleave="descendreLegende();">
+                    <img src="/public/img/Meurtre.webp" alt="Image d'une scène de crime">
+                </div>
+                <p class="part__exp_img txt_leg">Une scène de crime. On y voit la position de la victime quand elle a
+                    été
+                    retrouvée
+                    et les différentes
+                    preuves autour.</p>
+            </div>
 
             <p>Il y a plusieurs étapes dans une enquête. Tout d’abord, <b>recherches sont menées sur place</b>. Il faut
                 :
@@ -141,8 +147,13 @@
                 les secours passent avant.
                 Cependant, cela n’arrange pas le travail des policiers.
             </p>
-            <img src="/public/img/Meurtre_scene.webp" alt="Image d'une scène de crime avec banderolle">
-            <p class="part__exp_img">Déroulement d'une rubalise pour sécuriser la zone.</p>
+
+            <div class="visionneuse">
+                <div class="img_leg2" x-on:mouseover="monterLegende2();" x-on:mouseleave="descendreLegende2();">
+                    <img src="/public/img/Meurtre_scene.webp" alt="Image d'une scène de crime avec banderolle">
+                </div>
+                <p class="part__exp_img txt_leg2">Déroulement d'une rubalise pour sécuriser la zone.</p>
+            </div>
 
             <h5 class="part__petitTitle">3. Arrivée de la police scientifique</h5>
             <p>
