@@ -43,6 +43,7 @@
 .part__petitTitle {
     border-bottom: solid 2px var(--fond--rouge);
     width: max-content;
+    max-width: 375px;
 }
 
 .part__DGp3 {
@@ -57,4 +58,9 @@
 
 .Gp {
     width: 117px;
+}
+
+.bandeAnnonce {
+    width: 375px;
+    height: 211px;
 }
