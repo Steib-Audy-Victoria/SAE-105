@@ -13,6 +13,7 @@
     font-size: var(--titre-menu);
     transition: all 1s ease;
     transform: translateX(100%);
+    z-index: 50;
 }
 
 .menu--open {
@@ -97,9 +98,3 @@
   transform: rotate(90deg);
 }
 
-.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar,
-.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::before,
-.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
-  background-color: var(--fond--gris-fonce);
-  color: var(--fond--blanc);
-}
