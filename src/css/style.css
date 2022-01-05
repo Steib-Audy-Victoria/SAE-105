@@ -9,6 +9,7 @@
 /*base*/
 @import url("/src/css/base/main.css");
 @import url("/src/css/base/media.css");
+@import url("/src/css/base/page_404.css");
 
 /*layout*/
 @import url("/src/css/layout/header.css");

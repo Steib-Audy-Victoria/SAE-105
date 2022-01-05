@@ -1,0 +1,7 @@
+.h1__404 {
+    color: black;
+    display: flex;
+    flex-flow: row nowrap; 
+    align-items: center;
+    justify-content: center;
+}
